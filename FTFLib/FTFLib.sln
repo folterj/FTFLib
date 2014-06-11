@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FTFImageLib", "FTFImageLib\FTFImageLib.vcxproj", "{BED9867C-7981-4639-BA20-F75DBB7FF159}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FTFImageLibSample", "FTFImageSample\FTFImageSample.vcxproj", "{2820AEB6-CE9E-44E1-8784-01709AE05A94}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BED9867C-7981-4639-BA20-F75DBB7FF159} = {BED9867C-7981-4639-BA20-F75DBB7FF159}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FTFLib", "FTFLib\FTFLib.vcxproj", "{8775E335-1D3E-4612-9B1A-A07899CF06AE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FTFLibSample", "FTFLibSample\FTFLibSample.vcxproj", "{3DB07BE0-BC55-4AAC-B518-7EC58F47F6A7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8775E335-1D3E-4612-9B1A-A07899CF06AE} = {8775E335-1D3E-4612-9B1A-A07899CF06AE}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FTFFileLib", "FTFFileLib\FTFFileLib.vcxproj", "{4022FD94-DD3D-4865-8001-0076246F274B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FTFFileSample", "FTFFileSample\FTFFileSample.vcxproj", "{2A7A315D-E616-41C4-B836-463ABA2E63ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BED9867C-7981-4639-BA20-F75DBB7FF159}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BED9867C-7981-4639-BA20-F75DBB7FF159}.Debug|Win32.Build.0 = Debug|Win32
+		{BED9867C-7981-4639-BA20-F75DBB7FF159}.Release|Win32.ActiveCfg = Release|Win32
+		{BED9867C-7981-4639-BA20-F75DBB7FF159}.Release|Win32.Build.0 = Release|Win32
+		{2820AEB6-CE9E-44E1-8784-01709AE05A94}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2820AEB6-CE9E-44E1-8784-01709AE05A94}.Debug|Win32.Build.0 = Debug|Win32
+		{2820AEB6-CE9E-44E1-8784-01709AE05A94}.Release|Win32.ActiveCfg = Release|Win32
+		{2820AEB6-CE9E-44E1-8784-01709AE05A94}.Release|Win32.Build.0 = Release|Win32
+		{8775E335-1D3E-4612-9B1A-A07899CF06AE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8775E335-1D3E-4612-9B1A-A07899CF06AE}.Debug|Win32.Build.0 = Debug|Win32
+		{8775E335-1D3E-4612-9B1A-A07899CF06AE}.Release|Win32.ActiveCfg = Release|Win32
+		{8775E335-1D3E-4612-9B1A-A07899CF06AE}.Release|Win32.Build.0 = Release|Win32
+		{3DB07BE0-BC55-4AAC-B518-7EC58F47F6A7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3DB07BE0-BC55-4AAC-B518-7EC58F47F6A7}.Debug|Win32.Build.0 = Debug|Win32
+		{3DB07BE0-BC55-4AAC-B518-7EC58F47F6A7}.Release|Win32.ActiveCfg = Release|Win32
+		{3DB07BE0-BC55-4AAC-B518-7EC58F47F6A7}.Release|Win32.Build.0 = Release|Win32
+		{4022FD94-DD3D-4865-8001-0076246F274B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4022FD94-DD3D-4865-8001-0076246F274B}.Debug|Win32.Build.0 = Debug|Win32
+		{4022FD94-DD3D-4865-8001-0076246F274B}.Release|Win32.ActiveCfg = Release|Win32
+		{4022FD94-DD3D-4865-8001-0076246F274B}.Release|Win32.Build.0 = Release|Win32
+		{2A7A315D-E616-41C4-B836-463ABA2E63ED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2A7A315D-E616-41C4-B836-463ABA2E63ED}.Debug|Win32.Build.0 = Debug|Win32
+		{2A7A315D-E616-41C4-B836-463ABA2E63ED}.Release|Win32.ActiveCfg = Release|Win32
+		{2A7A315D-E616-41C4-B836-463ABA2E63ED}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
