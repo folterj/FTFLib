@@ -8,8 +8,8 @@ Flexible Tagged Format (FTF) is a completely flexible storage format using human
 
 Features:
 
-Platform independent
-Extremely flexible
+- Platform independent
+- Extremely flexible
 
 Truly self describing
 
