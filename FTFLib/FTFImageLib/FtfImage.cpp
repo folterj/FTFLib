@@ -32,7 +32,6 @@ bool FtfImage::readImage(String^ filename)
 	array<Byte>^ content;
 	String^ value;
 	int elements = 1;
-	int elementi = 0;
 	FtfColorModel colormodel = FtfColorModel::NONE;
 	FtfColorChannelsFormat colorChannelsFormat = FtfColorChannelsFormat::NONE;
 	FtfComponentFormat componentformat = FtfComponentFormat::NONE;
