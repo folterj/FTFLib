@@ -161,6 +161,10 @@ bool FtfImage::readImage(String^ filename)
 				bytesToBuffer(content, imageData, false, false);
 				imageDatas->Add(imageData);
 			}
+			if (content)
+			{
+				delete content;
+			}
 		}
 
 		hashOk = reader.readHash();
@@ -281,6 +285,7 @@ bool FtfImage::writeImage(String^ filename, ChannelFormat^ outputFormat)
 			{
 				ok &= writer.writeElement(content);
 			}
+			delete content;
 		}
 	}
 	writer.close();
@@ -295,12 +300,17 @@ String^ FtfImage::getErrorMessage()
 
 Bitmap^ FtfImage::getBitmap(ChannelFormat^ channelFormat, int imagei)
 {
+	Bitmap^ bitmap;
 	FtfImageData^ imageData;
+	array<Byte>^ byteData;
 	if (imagei >= 0 && imagei < imageDatas->Count)
 	{
 		imageData = imageDatas[imagei];
 	}
-	return bytesToBitmap(bufferToBytes(imageData, channelFormat, false, true), imageData->width, imageData->height, channelFormat);
+	byteData = bufferToBytes(imageData, channelFormat, false, true);
+	bitmap = bytesToBitmap(byteData, imageData->width, imageData->height, channelFormat);
+	delete byteData;
+	return bitmap;
 }
 
 String^ FtfImage::getTag(FtfFileReader^ reader, String^ label, bool required)
